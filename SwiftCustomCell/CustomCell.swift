@@ -29,6 +29,11 @@ class CustomCell: UITableViewCell {
         self.leftLabel.text = leftLabelText
         self.rightLabel.text = rightLabelText
         self.middleLabel.text = String(middleLabelInt)
+        
+        let frame1 = CGRectMake(0, 0, 50, 30)
+        var label : UILabel = UILabel(frame: frame1)
+        label.text = "Hello"
+        self.addSubview(label)
     }
 
 }
